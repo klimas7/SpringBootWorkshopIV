@@ -1,0 +1,6 @@
+server:
+  port: 8081
+
+scheduled:
+  time: 5000
+  cron: "*/3 * * * * *"

@@ -10,8 +10,14 @@ import java.time.LocalDateTime;
 @Component
 public class ScheduledTasks {
 
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(fixedRateString = "${scheduled.time}")
     public void printCurrentTime() {
         log.info("Now is: {}", LocalDateTime.now());
     }
+
+    @Scheduled(cron = "${scheduled.cron}")
+    public void printCurrentTimeCrone() {
+        log.info("Cron: Now is: {}", LocalDateTime.now());
+    }
+
 }
