@@ -8,3 +8,9 @@ server:
 scheduled:
   time: 5000
   cron: "*/3 * * * * *"
+
+logging:
+  level:
+    org:
+      springframework:
+        web: debug
