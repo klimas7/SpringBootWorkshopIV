@@ -17,3 +17,9 @@ logging:
     pl:
       klimas7:
         spring: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

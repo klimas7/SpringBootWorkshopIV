@@ -11,3 +11,7 @@ public class BootApplication {
         SpringApplication.run(BootApplication.class);
     }
 }
+
+/*
+http://localhost:8081/actuator
+ */
