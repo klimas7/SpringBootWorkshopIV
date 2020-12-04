@@ -13,6 +13,7 @@ public class ScheduledTasks {
     @Scheduled(fixedRateString = "${scheduled.time}")
     public void printCurrentTime() {
         log.info("Now is: {}", LocalDateTime.now());
+        log.debug("Now is: {}", LocalDateTime.now());
     }
 
     @Scheduled(cron = "${scheduled.cron}")

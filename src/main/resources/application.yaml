@@ -14,3 +14,6 @@ logging:
     org:
       springframework:
         web: debug
+    pl:
+      klimas7:
+        spring: DEBUG
