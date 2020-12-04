@@ -1,7 +1,8 @@
 spring:
   profiles:
     active: test
-
+#  main:
+#    banner-mode: off
 server:
   port: 8081
 

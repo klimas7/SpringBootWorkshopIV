@@ -15,3 +15,7 @@ public class BootApplication {
 /*
 http://localhost:8081/actuator
  */
+
+/*
+https://devops.datenkollektiv.de/banner.txt/index.html
+ */
