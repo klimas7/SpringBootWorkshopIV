@@ -2,13 +2,20 @@ package pl.klimas7.spring.boot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.web.client.RestTemplate;
 
-@EnableScheduling
+//@EnableScheduling
 @SpringBootApplication
 public class BootApplication {
     public static void main(String[] args) {
         SpringApplication.run(BootApplication.class);
+    }
+
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
     }
 }
 

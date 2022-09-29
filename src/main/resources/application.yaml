@@ -3,10 +3,11 @@ spring:
     active: test
 #  main:
 #    banner-mode: off
-  boot:
-    admin:
-      client:
-        url: http://localhost:8088
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:8088
+
 server:
   port: 8081
 
@@ -18,7 +19,7 @@ logging:
   level:
     org:
       springframework:
-        web: debug
+        web: info
     pl:
       klimas7:
         spring: DEBUG
